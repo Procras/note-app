@@ -1,10 +1,10 @@
 var assert = require("./assert");
-var noteModel = require("../../src/note-model.js");
+var Note = require("../../src/note-model.js");
 
 
 function testNoteSavedCorrectly() {
   var text = "my first note";
-  var note = new noteModel.Note(text);
+  var note = new Note(text);
   assert.isEqual(note.readNote(),text);
 }
 

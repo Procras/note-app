@@ -1,17 +1,18 @@
+var Note = require("./note-model.js");
+
 (function(exports){
-  var List = function(object) {
-    this.objects = object;
+  var List = function() {
     this.storage = [];
   };
 
-  List.prototype.write = function(text){
-    var note = new this.objects(text);
+  List.prototype.write = function(string){
+    var note = new Note(string);
     this.storage.push(note);
   };
 
-  List.prototype.readList = function(){
+  List.prototype.read = function(){
     return this.storage;
   };
 
-  exports.List = List;
+  module.exports = List;
 })(this);

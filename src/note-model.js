@@ -6,5 +6,5 @@ var Note = function(string) {
  Note.prototype.readNote = function(){
    return this.savedText;
  };
-  exports.Note = Note;
+  module.exports = Note;
 })(this);

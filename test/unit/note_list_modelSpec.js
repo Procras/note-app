@@ -1,14 +1,14 @@
 var assert = require("./assert");
-var noteListModel = require("../../src/note-list-model.js");
-var noteObject = require("../../src/note-model.js");
+var List = require("../../src/note-list-model.js");
+var Note = require("../../src/note-model.js");
 
 function testListStoresNote(){
   var text = "I am a new note";
-  var note = noteObject.Note;
-  var list = new noteListModel.List(note);
+  var note = Note;
+  var list = new List(note);
 
   list.write(text);
-  var newNote = list.readList()[0];
+  var newNote = list.read()[0];
   assert.isEqual(newNote.readNote(), text);
 }
 
