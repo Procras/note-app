@@ -4,8 +4,9 @@
     console.log("pass");
   } else {
     console.log("fail");
-  };
-  };
+  }
+};
+
   var doesArrayContain = function(array, object){
     if(array.includes(object)){
       console.log("pass");
