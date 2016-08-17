@@ -30,21 +30,21 @@
   Assert.prototype = {
     isEqual: function(p1, p2) {
     if(p1 === p2){
-    console.log("pass");
+    console.log("passes");
   } else {
-    console.log("fail");
+    console.log("fails");
   }
 },
     isNotEqual: function(p1, p2) {
     if(p1 !== p2) {
-    console.log("pass");
+    console.log("passes");
   } else {
-    console.log("fail");
+    console.log("fails");
    }
  },
   doesArrayContain: function(array, object){
     if(array.includes(object)){
-      console.log("pass");
+      console.log("passes");
     }
   }
 };

@@ -10,7 +10,7 @@ function testListStoresNote(){
 
   list.write(text);
   var newNote = list.read()[0];
-  // console.log("note_list_modelSpec.js"); //identifies which test in the console
+  console.log("note_list_modelSpec.js stores note"); //identifies which test in the console
   assert.isEqual(newNote.readNote(), text);
 }
 

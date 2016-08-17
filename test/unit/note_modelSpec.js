@@ -6,6 +6,7 @@ function testNoteSavedCorrectly() {
   var assert = new Assert();
   var text = "my first note";
   var note = new Note(text);
+  console.log("note_modelSpec.js creates note"); //identifies which test in the console
   assert.isEqual(note.readNote(),text);
 }
 

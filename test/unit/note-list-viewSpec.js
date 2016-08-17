@@ -13,12 +13,14 @@ function helper () {
 
 function testNoteListView() {
   helper();
+  console.log("note-list-viewSpec.js it views"); //identifies which test in the console
   assert.isNotEqual(view, null);
 }
 
 function testNoteListViewPrintHtml() {
   helper();
   var string = "<li>hello</li><li>goodbye</li><li>what</li>";
+  console.log("note-list-viewlSpec.js it prints html"); //identifies which test in the console
   assert.isEqual(view.htmlid(), string);
 }
 
