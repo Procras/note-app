@@ -27,6 +27,8 @@
   // };
 
 
+
+
   Assert.prototype = {
     isEqual: function(p1, p2) {
     if(p1 === p2){
@@ -45,6 +47,13 @@
   doesArrayContain: function(array, object){
     if(array.includes(object)){
       console.log("passes");
+    }
+  },
+  instanceof: function(object1, object2){
+    if(object1 instanceof object2){
+      console.log("Instance of " + object2.text + " Note-controller passes");
+    } else {
+      console.log("Instance of " + object2.text + " Note-controller fails");
     }
   }
 };
