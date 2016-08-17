@@ -1,18 +1,26 @@
 {
-  "name": "module-pattern-and-reflective-learning-workshop",
+  "name": "note-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node_modules/http-server/bin/http-server .",
-    "test": "mocha test --watch"
+  "directories": {
+    "test": "test"
   },
-  "devDependencies": {
-    "http-server": "^0.9.0",
-    "chai": "^3.5.0",
-    "mocha": "^2.5.3"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Procras/note-app.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Procras/note-app/issues"
+  },
+  "homepage": "https://github.com/Procras/note-app#readme",
+  "dependencies": {
+    "hapi": "^14.2.0",
+    "http-server": "^0.9.0"
+  }
 }
