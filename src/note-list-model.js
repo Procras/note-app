@@ -1,4 +1,4 @@
-var Note = require("./note-model.js");
+
 
 (function(exports){
   var List = function() {
@@ -14,5 +14,5 @@ var Note = require("./note-model.js");
     return this.storage;
   };
 
-  module.exports = List;
+  exports.List = List;
 })(this);
