@@ -1,7 +1,7 @@
 function testNoteController() {
   var notelist = new NoteList;
 //   console.log(1);
-  notelist.createNote("Favorite Drink: Seltzer");
+  notelist.createNote("Seltzer");
 //   console.log(2);
   var notecontroller = new NoteController(notelist);
 //   console.log(3);
@@ -11,7 +11,7 @@ function testNoteController() {
   var element = document.getElementById("app");
 //   console.log(5);
 //   console.log(element);
-  if (element.innerHTML === "<ul><li>Favorite Drink: Seltzer</li></ul>") {
+  if (element.innerHTML === "<ul><li>Seltzer</li></ul>") {
     console.log("testNoteController: This has passed");
   } else {
     console.log("testNoteController: This has failed");

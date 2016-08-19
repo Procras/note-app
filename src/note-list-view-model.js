@@ -12,7 +12,7 @@ noteListView.prototype.returnArrayAsHtml = function () {
  if (listarray.length !== 0) {
   html = "<ul>";
     for (var i = 0; i < listarray.length; i++) {
-      html += "<li>" + listarray[i].text +"</li>";
+      html += "<li>" + listarray[i].text.substr(0,20) +"</li>";
     };
   html += "</ul>";
   return html };

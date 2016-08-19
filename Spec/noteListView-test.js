@@ -24,5 +24,17 @@ function testNoteListViewMultiple() {
     }
   };
 
+  function testNoteListViewMax20() {
+    var notelist = new NoteList;
+    notelist.createNote("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+    var notelistview = new noteListView(notelist);
+    if (notelistview.returnArrayAsHtml() === "<ul><li>aaaaaaaaaaaaaaaaaaaa</li></ul>") {
+      console.log("testNoteListViewMax20: This has passed");
+    } else {
+      console.log("testNoteListViewMax20: This has failed");
+   }
+ };
+
 testNoteListViewMultiple();
 testNoteListViewEmpty();
+testNoteListViewMax20();
